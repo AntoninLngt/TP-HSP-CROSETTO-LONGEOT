@@ -18,3 +18,6 @@ In this session we worked on a knowing CUDAwith Matrix multiplication :
 
 ## 03/12 : Second Practical
 In this session we worked on the first LeNet-5 layers.
+- Layer 1 - Test data generation, we realized 1D tabular initialization where each case is corresponding to one element
+
+**N=32x32, 6x28x28, 6x14x14 et 6x5x5**
