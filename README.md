@@ -53,6 +53,9 @@ This is the concept of the parallelism offered by CUDA.
 
 Each thread is identified by a combination of its indices: `threadIdx`, `blockIdx`, and the block and grid dimensions (`blockDim`, `gridDim`). This allows threads to collaborate and divide workloads dynamically.
 
+> [!TIP]  
+>A CPU (Central Processing Unit) is optimized for sequential processing with a few powerful cores handling tasks one at a time or in small batches. In contrast, a GPU (Graphics Processing Unit) excels at parallelization, using thousands of smaller, less powerful cores to process many tasks simultaneously.
+
 Using this theory will show us the difference between CPU and GPU. 
 
 ### Compare the time for running a programm under GPU & CPU
