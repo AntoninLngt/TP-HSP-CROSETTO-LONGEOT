@@ -35,6 +35,8 @@ void MatrixMult(float *M1, float *M2, float *Mout, int n);
 // Multiplication (GPU)
 __global__ void cudaMatrixAdd(float *M1, float *M2, float *Mout, int n);
 ````
+**Results :**
+![image](https://github.com/user-attachments/assets/64c5fdc6-c2a2-4f79-92e4-f07bcfea493b)
 
 ### Understanding the difference between the CPU (sequential) & the GPU (parallelization)
 
