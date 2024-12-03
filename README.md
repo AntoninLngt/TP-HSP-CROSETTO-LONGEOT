@@ -12,7 +12,10 @@ In this session we worked on a knowing CUDAwith Matrix multiplication :
 - Understanding the difference between the CPU (sequential) & the GPU (parallelization)
 - Compare the time for running a programm under GPU & CPU
 
-For do that we defined and worked on the functions below : 
+### Design multiplication function in Cuda
+
+We started by define and work on the functions below : 
+
 ````
 // Matrix  Initialization
 void MatrixInit(float *M, int n, int p);
@@ -32,13 +35,26 @@ void MatrixMult(float *M1, float *M2, float *Mout, int n);
 // Multiplication (GPU)
 __global__ void cudaMatrixAdd(float *M1, float *M2, float *Mout, int n);
 ````
-In Cuda, the indexes of our matrix are accessed in a different way, with a call to Grid, Block, which is represented below:
 
+### Understanding the difference between the CPU (sequential) & the GPU (parallelization)
 
+In Cuda, the indexes of our matrix elements are accessed in a different way, with a call to Grid, Block, Threads which are represented below:
+![image](https://github.com/user-attachments/assets/e03e9463-8ca8-45a9-a953-e673d9e26f82)
 
+This is the concept of the parallelism offered by CUDA. 
 
+1. **Thread**: The smallest unit of execution, responsible for performing computations. Each thread has a unique identifier within its block.
+2. **Block**: A group of threads. Threads in a block can share memory (shared memory) and synchronize with each other using barriers.
+3. **Grid**: A collection of blocks. Grids organize how blocks are distributed across the GPU.
+
+Each thread is identified by a combination of its indices: `threadIdx`, `blockIdx`, and the block and grid dimensions (`blockDim`, `gridDim`). This allows threads to collaborate and divide workloads dynamically.
+
+Using this theory will show us the difference between CPU and GPU. 
+
+### Compare the time for running a programm under GPU & CPU
 
 ![time_CPU (s) and time_GPU (s) in logarithmic scale](https://github.com/user-attachments/assets/5f195eac-7eba-4fd0-95b3-e63b0740030c)
+
 This is a schema representing the comparison between CPU and GPU multiplication of 2 N_DIM Matrix. 
 
 
