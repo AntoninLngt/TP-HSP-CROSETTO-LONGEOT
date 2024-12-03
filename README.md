@@ -39,7 +39,11 @@ __global__ void cudaMatrixAdd(float *M1, float *M2, float *Mout, int n);
 ### Understanding the difference between the CPU (sequential) & the GPU (parallelization)
 
 In Cuda, the indexes of our matrix elements are accessed in a different way, with a call to Grid, Block, Threads which are represented below:
-![image](https://github.com/user-attachments/assets/e03e9463-8ca8-45a9-a953-e673d9e26f82)
+<div align="center">
+  
+  ![image](https://github.com/user-attachments/assets/e03e9463-8ca8-45a9-a953-e673d9e26f82)
+  
+</div>
 
 This is the concept of the parallelism offered by CUDA. 
 
@@ -53,9 +57,23 @@ Using this theory will show us the difference between CPU and GPU.
 
 ### Compare the time for running a programm under GPU & CPU
 
-![time_CPU (s) and time_GPU (s) in logarithmic scale](https://github.com/user-attachments/assets/5f195eac-7eba-4fd0-95b3-e63b0740030c)
+We have made several measurements of multiplication times. Each measurement was performed with **different matrix sizes** : 10, 100, 500, 1000, 2000. 
 
-This is a schema representing the comparison between CPU and GPU multiplication of 2 N_DIM Matrix. 
+To count the execution time under CPU we used a `clock()` during multiplication. 
+
+For the GPU, the `nvprof` command gives us program information, including execution time. 
+
+We obtain the following values:
+
+<div align="center">
+  
+  ![time_CPU (s) and time_GPU (s) in logarithmic scale](https://github.com/user-attachments/assets/5f195eac-7eba-4fd0-95b3-e63b0740030c)
+  
+  Schema representing the comparison between CPU and GPU multiplication of 2 N_DIM Matrix
+  
+</div>
+
+Results show that for a small size of data, we don't need to use a GPU for computational functions. Moreover passed a certain size above, GPU show drastically that the time of calculation is lower than the time of CPU calculation. 
 
 
 ## 03/12 : Second Practical
