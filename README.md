@@ -75,6 +75,9 @@ To count the execution time under CPU we used a `clock()` during multiplication.
 
 For the GPU, the `nvprof` command gives us program information, including execution time. 
 
+![image](https://github.com/user-attachments/assets/25ee4dd1-6708-453f-8815-8c90759ac62b)
+
+
 We obtain the following values:
 
 <div align="center">
