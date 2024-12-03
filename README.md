@@ -12,20 +12,25 @@ In this session we worked on a knowing CUDAwith Matrix multiplication :
 - Understanding the difference between the CPU (sequential) & the GPU (parallelization)
 - Compare the time for running a programm under GPU & CPU
 
-For do that we define the functions below : 
+For do that we defined and worked on the functions below : 
 ````
 // Matrix  Initialization
 void MatrixInit(float *M, int n, int p);
+
 // Print Matrix 
 void MatrixPrint(float *M, int n, int p);
+
 // Addition (CPU)
-void MatrixAdd(float *M1, float *M2, float *Mout, int n, int p)
+void MatrixAdd(float *M1, float *M2, float *Mout, int n, int p);
+
 // Addition (GPU)
-void MatrixAdd(float *M1, float *M2, float *Mout, int n, int p)
+void MatrixAdd(float *M1, float *M2, float *Mout, int n, int p);
+
 // Multiplication (CPU)
-void MatrixMult(float *M1, float *M2, float *Mout, int n)
+void MatrixMult(float *M1, float *M2, float *Mout, int n);
+
 // Multiplication (GPU)
-__global__ void cudaMatrixAdd(float *M1, float *M2, float *Mout, int n)
+__global__ void cudaMatrixAdd(float *M1, float *M2, float *Mout, int n);
 ````
 
 ![time_CPU (s) and time_GPU (s) in logarithmic scale](https://github.com/user-attachments/assets/5f195eac-7eba-4fd0-95b3-e63b0740030c)
