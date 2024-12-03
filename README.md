@@ -32,9 +32,14 @@ void MatrixMult(float *M1, float *M2, float *Mout, int n);
 // Multiplication (GPU)
 __global__ void cudaMatrixAdd(float *M1, float *M2, float *Mout, int n);
 ````
+In Cuda, the indexes of our matrix are accessed in a different way, with a call to Grid, Block, which is represented below:
+
+
+
+
 
 ![time_CPU (s) and time_GPU (s) in logarithmic scale](https://github.com/user-attachments/assets/5f195eac-7eba-4fd0-95b3-e63b0740030c)
-
+This is a schema representing the comparison between CPU and GPU multiplication of 2 N_DIM Matrix. 
 
 
 ## 03/12 : Second Practical
