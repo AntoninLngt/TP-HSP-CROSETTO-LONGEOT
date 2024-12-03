@@ -11,6 +11,9 @@ In this session we worked on a knowing CUDAwith Matrix multiplication :
 - Design multiplication function in Cuda
 - Understanding the difference between the CPU (sequential) & the GPU (parallelization)
 - Compare the time for running a programm under GPU & CPU
+![time_CPU (s) and time_GPU (s) in logarithmic scale](https://github.com/user-attachments/assets/5f195eac-7eba-4fd0-95b3-e63b0740030c)
+
+
 
 ## 03/12 : Second Practical
 In this session we worked on the first LeNet-5 layers.
