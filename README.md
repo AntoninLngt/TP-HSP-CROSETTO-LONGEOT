@@ -112,7 +112,14 @@ Notebook jupyter :
     Flatten --> 400
     Dense --> 120 (Full connection : Tanh activation)
     Dense --> 86 (Full connection : Tanh activation)
-    Dense --> 10 (Gaussian connection : Softmax activation)  
+    Dense --> 10 (Gaussian connection : Softmax activation)
 - Training with an Adam optimizer and a loss sparse categorical crossentopy
 - 5 epochs training
-- 
+
+<div align="center">
+  
+  ![image](https://github.com/user-attachments/assets/26af56f7-da9b-4d62-a2af-f61e0d67d84a)
+
+  **Model summary**
+
+</div>
