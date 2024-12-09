@@ -91,10 +91,50 @@ Results show that for a small size of data, we don't need to use a GPU for compu
 
 
 ## 03/12 : Second Practical
-In this session we worked on the first LeNet-5 layers.
-- Layer 1 - Test data generation, we realized 1D tabular initialization where each case is corresponding to one element
+In this session we worked on LeNet-5 layers. To implement it, we need to write the various functions of the model layers step by step. 
 
-**N=32x32, 6x28x28, 6x14x14 et 6x5x5**
+
+These are the details about the layers in the model.
+
+| **Layer**                  | **Description**                                                                          |
+|----------------------------|------------------------------------------------------------------------------------------|
+| **Layer 1 - Test Data Generation**          | Creation or loading of the data needed to train and test the model.                        |
+| **Layer 2 - 2D Convolution**                | Application of a 2D convolution operation to extract local features.                      |
+| **Layer 3 - Subsampling**                   | Reduction of the feature map resolution to decrease computational complexity.             |
+
+
+### Layer 1 - Test data generation
+The data we will be working with are images from the MNIST dataset representing digits 0 to 9. 
+
+<div align="center">
+  
+  ![image](https://github.com/user-attachments/assets/405fb98e-be30-4d0f-99fa-631b7fc98dec)
+  **MNIST Dataset**
+
+</div>
+
+We realized 1D tabular initialization where each case is corresponding to one element for the matrix representation. 
+
+**N=32x32, 6x28x28, 6x14x14 and 6x5x5**
+
+The different matrix will take the in/output values of the different layers. 
+
+### Layer 2 - 2D Convolution
+
+Convolution with 6 convolution kernels of size 5x5
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 09/12 : Third Practical
 
