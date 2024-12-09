@@ -98,3 +98,21 @@ In this session we worked on the first LeNet-5 layers.
 
 ## 09/12 : Third Practical
 
+In this part you will train your neural network and understand the last associated layers to be
+associated layers to implement in your CUDA program.
+
+Notebook jupyter :
+- Dataset standardisation
+- New layer to the dataset, from 28*28 to 28*28*1
+- For the lenet_5_model
+    Convolution2D --> 6*28*28
+    AveragePooling2D --> 6*14*14 (sub-sampling)
+    Convolution2D --> 16*10*10 (with padding)
+    AveragePooling2D --> 16*5*5 (sub-sampling)
+    Flatten --> 400
+    Dense --> 120 (Full connection : Tanh activation)
+    Dense --> 86 (Full connection : Tanh activation)
+    Dense --> 10 (Gaussian connection : Softmax activation)  
+- Training with an Adam optimizer and a loss sparse categorical crossentopy
+- 5 epochs training
+- 
