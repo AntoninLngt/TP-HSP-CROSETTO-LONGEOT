@@ -123,3 +123,13 @@ Notebook jupyter :
   **Model summary**
 
 </div>
+
+<div align="center">
+
+  ![image](https://github.com/user-attachments/assets/6be093ea-fbf9-42be-97a8-da3ce54be6a9)
+
+  **printMNIST.cu function**
+
+
+</div>
+
