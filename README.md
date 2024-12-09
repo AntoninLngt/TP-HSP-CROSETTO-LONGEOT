@@ -134,6 +134,10 @@ Each kernel learns to detect specific patterns or features in the input
 Sub-sampling is performed by averaging 2x2 pixels down to 1 pixel.
 
 
+### Results 
+
+
+
 
 
 
