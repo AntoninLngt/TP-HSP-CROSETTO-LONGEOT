@@ -1,4 +1,4 @@
-# TP-HSP-CROSETTO-LONGEOT
+# TP-HSP-CROSETTO-LONGEOT-THOREZ
 CNN Implemetation Hardware for signal processing
 
 **The ultimate goal of these 4 sessions is to implement the inference of a very clear CNN: LeNet-5 proposed by Yann LeCun et al.
