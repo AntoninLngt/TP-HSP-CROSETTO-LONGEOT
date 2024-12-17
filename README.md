@@ -152,7 +152,7 @@ Sub-sampling is performed by averaging 2x2 pixels down to 1 pixel.
 
 
 
-## 09/12 : Third Practical
+## Third & Fourth Practical
 
 In this part you will train your neural network and understand the last associated layers to be
 associated layers to implement in your CUDA program.
@@ -198,3 +198,6 @@ Notebook jupyter :
 
 </div>
 
+Using the Python notebook, we rewrote the structure of the model in Cuda so that we could use the parallelization of tasks. 
+
+From the random weight generation, the convolution layer does not allow us to obtain classification results. To do this, we need to access the value of the weights and paste them between the layers (Spot in progress).
